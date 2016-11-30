@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<?php
+$servername = "localhost";
+$username = "stcadmin";
+$password = "admin";
+$dbname = "sport";
+
+// Create connection
+$db = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn == false) {
+    die();
+	echo "Failed!";
+} 
+echo "Connected successfully";
+
+$sql = "SELECT * FROM news";
+$result = mysql_query($sql)
+
+while ($row = mysql_fetch_assoc($result))
+{ echo $row['title'];
+}
+?>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>St Thomas of Canterbury Sport</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div class="background">
+		<div class="page">
+			<div class="header">
+				<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+				<ul>
+					<li>
+						<a href="news.html">News</a>
+					</li>
+					<li>
+						<a href="team.html">Teams</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="videos.html">Videos</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</div>
+			<div class="body home">
+				<div>
+					<div class="featured">
+						<div>
+							<h2>We Are The <br> Champions!</h2>
+							<p>
+								This Web Site has been designed to help our School have more information about sport times, important notices and the ultimate highlights of our school sports teams.
+							</p>
+						</div>
+					</div>
+					<div>
+						<div>
+							<h3>Latest Videos</h3>
+							<span><a href="videos.html">View More Videos</a></span>
+							<ul>
+								<li>
+									<a><iframe width="200" height="151" src="https://www.youtube.com/embed/HGaP9s6NEsU" frameborder="0" allowfullscreen></iframe></a>
+									<h4>Stc Sports progarm</h4>
+									<p>
+										At St Thomas' we believe that the best preparation for life is an education which fosters excellence in a caring, diverse environment.
+									</p>
+								</li>
+								<li>
+									<a><iframe width="200" height="151" src="https://www.youtube.com/embed/C_fEIVwjrew" frameborder="0" allowfullscreen></iframe></a>
+									<h4>In Memory of Muhamad Ali</h4>
+									<p>
+										Muhamad Ali died June 3rd 2016. Some of his best Knockouts.
+									</p>
+								</li>
+								<li>
+									<a><iframe width="200" height="151" src="https://www.youtube.com/embed/GQ1VDbPH8vE" frameborder="0" allowfullscreen></iframe></a>
+									<h4>Stc School Haka</h4>
+									<p>
+										College Haka with subtitles and translation. This is performed by the students in 1st grade teams before every game.
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h3>Featured</h3>
+							<span><a href="news.html">View More Featured</a></span>
+							<ul>
+								<li>
+									<a href="news.html"><img src="images/football.jpg" style="width:200px;height:150px;" alt=""></a>
+									<h4>1st Eleven Football</h4>
+									<p>
+										Taking on Middelton Grange this wednesday 5.15pm @ English Park 
+									</p>
+								</li>
+								<li>
+									<a href="news.html"><img src="images/basketball.jpg" style="width:200px;height:150px;" alt=""></a>
+									<h4>1st Five Basketball</h4>
+									<p>
+										Photo from Tuesday game against Middelton Grange
+									</p>
+								</li>
+								<li>
+									<a href="news.html"><img src="images/JnrRugby.jpg" style="width:200px;height:150px;" alt=""></a>
+									<h4>U12 Rugby Boys</h4>
+									<p>
+										Under 12 STC vs U12  Chch.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar">
+					<div class="news">
+						<span>Latest News</span>
+						<ul>
+							<li>
+								<a href="news.html">1st XI Playing</a> <span>Posted on 23 June 2016</span>
+							</li>
+							<li>
+								<a href="news.html">Tom Shepard Scores</a> <span>Posted on 18 June 2016</span>
+							</li>
+							<li>
+								<a href="news.html">3rd XI lose</a> <span>Posted on 22 May 2016</span>
+							</li>
+							<li>
+								<a href="news.html">2nd XI lose</a> <span>Posted on 16 May 2016</span>
+							</li>
+							<li>
+								<a href="news.html">1st XV win</a> <span>Posted on 5 May 2016</span>
+							</li>
+							<li>
+								<a href="news.html">Evans wins CoY</a> <span>Posted on 30 April 2016</span>
+							</li>
+							<li>
+								<a href="news.html">Basketball Fundraiser</a> <span>Posted on 27 April 2016</span>
+							</li>
+						</ul>
+						<a href="news.html">Read More</a>
+					</div>
+					<div class="section">
+						<span>Game Schedule</span>
+						<ul>
+							<li>
+								<a href="schedule.html">1st XI VS MDGR </a> <span>29 June 2016 @ 5.15PM</span>
+							</li>
+							<li>
+								<a href="schedule.html">Grizzles VS ELLE</a> <span>29 June 2016 @ 3.15PM</span>
+							</li>
+							<li>
+								<a href="schedule.html">Vipers VS KAIA Boys A</a> <span>29 June 2016 @ 3.15PM</span>
+							</li>
+							<li>
+								<a href="schedule.html">Wolves VS CASH Rojos</a> <span>29 June 2016 @ 3.15PM</span>
+							</li>
+							<li>
+								<a href="schedule.html">1st XV VS MBHS</a> <span>25 June 2016 @ 5PM</span>
+							</li>
+						</ul>
+						<a href="schedule.html">View Schedule</a>
+					</div>
+					<div>
+						<span>Latest Facebook</span>
+						<ul>
+							<li>
+								<p>
+									<a href="#">Basketball Fundraiser !!!
+												For Sale - St Thomas water bottles $15
+												Includes NAME block to individualise bottle
+												Cash payment only to Mr Milne or Mr Brooker in the PE office</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#">St Thomas first XI take on Middleton Grange this Wednesday 5:15pm kick of at ASB Football park (English park) on Cranford street.
+												Last chance for the team to make premier national tournament..</a>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#">Rugby update
+												1st 10 mbhs 35
+												2nd 14 Christ college 2nd XV 44
+												U15 A 17 sbhs A 29
+												U15 B 19 vs St Bedes B 52
+												U14 29 Christ college A 14
+												U13 38 p arklands 22
+												U12 7 sumner 36</a>
+								</p>
+							</li>
+						</ul>
+						<a href="https://www.facebook.com/stcport/?fref=ts">Follow stc<br> on Facebook</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<ul>
+						<li class="selected">
+							<a href="index.html">Home</a>|
+						</li>
+						<li>
+							<a href="news.html">News</a>|
+						</li>
+						<li>
+							<a href="team.html">Team</a>|
+						</li>
+						<li>
+							<a href="schedule.html">Schedule</a>|
+						</li>
+						<li>
+							<a href="videos.html">Videos</a>|
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+					<p>
+						&#169; STC 2023. All Rights Reserved
+					</p>
+				</div>
+				<div class="connect">
+					<span>Follow Us</span> <a href="http://freewebsitetemplates.com/go/facebook/" id="fb">fb</a> <a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a> <a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">google+</a> <a href="http://www.freewebsitetemplates.com/misc/contact" id="contact">contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
